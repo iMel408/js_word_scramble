@@ -28,7 +28,7 @@ candy['purple'] = 'grape';
 candy['red'] = 'cherry';
 candy['blue'] = 'blueberry';
 candy['green'] = 'lime';
-candy['orange'] = 'orange';
+candy['orange'] = 'orange'; //gott a be a better way of doing this... 
 
 console.log(candy);
 
