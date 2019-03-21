@@ -1,12 +1,43 @@
 // Create a function that reverses a word
 
+function reverseWord(word) {
+    return word.split('').reverse().join('');
+}
+console.log(reverseWord('melissa'))
+
 // Create a function that takes an array of words and returns a new array of the
  // words with each word reversed.
 
+function reverseWords(words) {
+    result = []
+    for (let word of words) {
+        result.push(word.split('').reverse().join(''));
+    }
+    console.log(result);
+}
+console.log(reverseWords(['melissa', 'bonnie', 'linda', 'dave']))
+
+
 // Create a function that returns a random word from an array
+
+function randomWord(list) {
+
+    return list[Math.floor(Math.random()*list.length)];
+}
+console.log(randomWord(['melissa', 'arun', 'will', 'qiaozi']))
 
 // Create an array of words and save it to a variable. Using your functions create
 // a second array of reversed words.
+
+
+words = ['melissa', 'arun', 'will', 'qiaozi']
+
+function multiTask(words) {
+
+    return reverseWords(words);
+}
+
+console.log(multiTask(words));
 
 // We could use the two arrays we've created to select a random word to show the user
 // and check their guess. How could we do that? Is there a better way?
